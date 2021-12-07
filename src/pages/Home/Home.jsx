@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../app.scss'
-import bg from '../../assets/images/heroBg.png';
+//import bg from '../../assets/images/heroBg.png';
 
 function Home() {
   return (
