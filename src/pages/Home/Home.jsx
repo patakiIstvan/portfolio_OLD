@@ -10,7 +10,7 @@ function Home() {
         <div className="left">
           <h1>Hey, I'm Pisti!</h1>
           <p>I'm a front-end developer, a huge science and music enthusiastic.</p>
-          <a>My Projects</a>
+          <a href="https://www.google.com">My Projects</a>
         </div>
         <div className="right">
           <div className="imgContainer">
