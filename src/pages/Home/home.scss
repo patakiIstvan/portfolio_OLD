@@ -4,4 +4,61 @@
   height: calc(100vh - 70px + 100px);
   background-color: #222;
   background-size: 800px 600px;
+
+  .hero {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+
+    .left {
+      flex: 1;
+      margin-top: -70px;
+
+      h1 {
+        color: $primaryColor;
+        font-size: 38px;
+        margin-bottom: 30px;
+      }
+
+      p {
+        color: $secondaryColor;
+        width: 80%;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      >a {
+        color: $primaryColor;
+        font-size: 24px;
+        font-weight: 500;
+        padding: 10px 20px;
+        background-color: #4b6cc1;
+        border-radius: 9999px;
+        cursor: pointer;
+      }
+    }
+
+    .right {
+      flex: 1;
+      margin-top: -70px;
+      display: flex;
+      justify-content: center;
+
+      .imgContainer {
+        background-color: gray;
+      }
+
+      img {
+        width: 250px;
+        height: auto;
+        position: relative;
+        top: 10px;
+        left: 10px;
+        z-index: 5;
+      }
+    }
+
+  }
+
 }

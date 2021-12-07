@@ -1,3 +1,10 @@
-h1 {
-  color: purple;
+@import './variables';
+@import './pages/Home/home';
+@import './components/Navbar/navbar';
+
+.section {
+  width: 100%;
+  position: relative;
+  top: 70px;
+  padding: $sectionPadding;
 }
