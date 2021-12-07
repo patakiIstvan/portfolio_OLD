@@ -14,7 +14,8 @@ function Home() {
         </div>
         <div className="right">
           <div className="imgContainer">
-            <img src="/assets/images/profilePicLong.jpg" alt="A pic of Pisti, who is watching deep into your soul." />
+            <img className="img__human" src="/assets/images/profilePicLong.jpg" alt="A pic of a human, who is watching deep into your soul." />
+            <img className="img__shirt" src="/assets/images/ruha.png" alt="A pic of of the human's shirt. It looks cool." />
           </div>
         </div>
       </section>

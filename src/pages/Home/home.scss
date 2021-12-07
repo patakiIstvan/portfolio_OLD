@@ -46,16 +46,26 @@
       justify-content: center;
 
       .imgContainer {
+        position: relative;
         background-color: gray;
       }
 
       img {
         width: 250px;
         height: auto;
-        position: relative;
         top: 10px;
         left: 10px;
+      }
+
+      .img__human {
+        position: relative;
         z-index: 5;
+      }
+
+      .img__shirt {
+        position: absolute;
+        z-index: 10;
+        filter: hue-rotate(242deg) saturate(5) brightness(0.4);
       }
     }
 
