@@ -11,7 +11,6 @@ const colorSet = [
 const colorRange = 360 - colorSet[0][0] + colorSet[colorSet.length - 1][0];
 
 const changeColor = (e) => {
-  const shirt = document.querySelector('.img__shirt');
   const mouseXPercent = e.screenX / body.clientWidth;
   const hueExtra = colorRange * mouseXPercent;
   const placeInHue = (colorRange + hueExtra) % 360;
@@ -24,7 +23,10 @@ const changeColor = (e) => {
       const setHue = setPrev[0] % 360 + (setI[0] - setPrev[0] % 360) * placeBetween;
       const setSat = setPrev[1] + (setI[1] - setPrev[1]) * placeBetween;
       const setBr = setPrev[2] + (setI[2] - setPrev[2]) * placeBetween;
-      shirt.style.filter = `hue-rotate(${String(setHue)}deg) saturate(${String(setSat)}) brightness(${String(setBr)})`;
+      const shirt = document.querySelector('.img__shirt');
+      if (shirt) {
+        shirt.style.filter = `hue-rotate(${String(setHue)}deg) saturate(${String(setSat)}) brightness(${String(setBr)})`;
+      }
       break
     }
   }
