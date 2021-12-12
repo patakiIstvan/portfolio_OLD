@@ -6,7 +6,7 @@ const colorSet = [
   [206, 10, 0.4],
   [228, 5, 0.4],
   [360, 5, 0.4],
-  [58, 5, 0.6]
+  [58, 5, 0.4]
 ];
 const colorRange = 360 - colorSet[0][0] + colorSet[colorSet.length - 1][0];
 
