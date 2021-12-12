@@ -2,7 +2,6 @@ import React from 'react'
 import '../../app.scss'
 //import bg from '../../assets/images/heroBg.png';
 const body = document.querySelector("body");
-const shirt = document.querySelector('.img__shirt');
 const colorSet = [
   [206, 10, 0.4],
   [228, 5, 0.4],
@@ -12,6 +11,7 @@ const colorSet = [
 const colorRange = 360 - colorSet[0][0] + colorSet[colorSet.length - 1][0];
 
 const changeColor = (e) => {
+  const shirt = document.querySelector('.img__shirt');
   const mouseXPercent = e.screenX / body.clientWidth;
   const hueExtra = colorRange * mouseXPercent;
   const placeInHue = (colorRange + hueExtra) % 360;
