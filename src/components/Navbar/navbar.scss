@@ -24,6 +24,30 @@
       font-size: 16px;
       color: $secondaryColor;
       margin-left: 25px;
+
+      position: relative;
+      overflow: hidden;
+    }
+
+    a::after {
+      content: "";
+      position: absolute;
+      z-index: 100;
+      right: 0;
+      width: 0;
+      bottom: -5px;
+      background: white;
+      height: 4px;
+
+      transition-property: width;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-out;
+    }
+
+    a:hover::after {
+      left: 0;
+      right: auto;
+      width: 100%;
     }
   }
 
