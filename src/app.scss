@@ -2,9 +2,13 @@
 @import './pages/Home/home';
 @import './components/Navbar/navbar';
 
-.section {
+.relative-section {
   width: 100%;
   position: relative;
   top: 70px;
+}
+
+.section {
   padding: $sectionPadding;
+  width: 100%;
 }
