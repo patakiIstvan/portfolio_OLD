@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../app.scss'
 //import bg from '../../assets/images/heroBg.png';
+
 const body = document.querySelector("body");
 const colorSet = [
   [206, 10, 0.4],
@@ -36,17 +37,26 @@ function Home() {
     // <main style={{ backgroundImage: "url(" + bg + ")" }} class="main section" >
     <main className="main relative-section" onMouseMove={changeColor}>
       <section className="hero section">
-        <div className="left">
-          <h1>Hey, I'm Pisti!</h1>
-          <p>I'm a front-end developer, a huge science and music enthusiastic.</p>
-          <a href="https://www.google.com">My Projects</a>
-        </div>
-        <div className="right">
-          <div className="imgContainer">
-            <img className="img__human" src="/assets/images/profilePicLong.jpg" alt="A pic of a human, who is watching deep into your soul." />
-            <img className="img__shirt" src="/assets/images/ruha.png" alt="A pic of of the human's shirt. It looks cool." />
+        <div className="hero__container">
+          <div className="left">
+            <h1>Hey, I'm Pisti!</h1>
+            <p>I'm a front-end developer, a huge science and music enthusiastic.</p>
+            <a href="https://www.google.com">My Projects</a>
+          </div>
+          <div className="right">
+            <div className="imgContainer">
+              <img className="img__human" src="/assets/images/profilePicLong.jpg" alt="A pic of a human, who is watching deep into your soul." />
+              <img className="img__shirt" src="/assets/images/ruha.png" alt="A pic of of the human's shirt. It looks cool." />
+            </div>
           </div>
         </div>
+
+        <div class="custom-shape-divider-bottom-1640210528">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+          </svg>
+        </div>
+
       </section>
       <section className="about-me section">
         <div className="about-me__container">
