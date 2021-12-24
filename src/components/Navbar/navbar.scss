@@ -58,4 +58,16 @@
     display: none;
   }
 
+  //RSPONSIVENESS RSPONSIVENESS RSPONSIVENESS RSPONSIVENESS
+
+  @media(max-width: $mSize) {
+    .nav {
+      display: none;
+    }
+
+    #menuIcon {
+      display: block;
+    }
+  }
+
 }

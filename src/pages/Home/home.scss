@@ -10,7 +10,7 @@
     &__container {
       display: flex;
       align-items: center;
-      height: calc(100vh - 70px + 100px);
+      padding: 150px 0 200px;
     }
 
     .left {
@@ -151,4 +151,46 @@
     }
   }
 
+
+
+
+
+
+  // RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE
+  // RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE
+
+  // HERO SECRION HERO SECRION
+
+  .hero {
+    @media(max-width: $sSize) {
+      &__container {
+        flex-direction: column-reverse;
+        padding: 100px 0 200px;
+
+        .right {
+          .imgContainer {
+            margin-bottom: 120px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            overflow: hidden;
+
+
+            .img__human {
+              left: 0px;
+              top: -35px;
+              object-fit: cover;
+
+            }
+
+            .img__shirt {
+              display: none;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  // .main END
 }

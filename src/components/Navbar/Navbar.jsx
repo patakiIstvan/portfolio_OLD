@@ -1,10 +1,23 @@
 import React from 'react'
 import '../../app.scss'
 
+const menuIcon = document.querySelector('#menuIcon');
+const nav = document.querySelector('.nav');
+
+function navList() {
+  menuIcon.classList.toggle('uil-times');
+  nav.classList.toggle('active');
+}
+
+window.onscroll = () => {
+  menuIcon.classList.remove('uil-times');
+  nav.classList.remove('active');
+}
+
 function Navbar() {
   return (
-    <header class="navbar">
-      <div class="logo">
+    <header className="navbar">
+      <div className="logo">
         <span>Pataki István</span>
       </div>
       <nav class="nav">
@@ -24,7 +37,7 @@ function Navbar() {
           <li><a href="https://google.com">Contact</a></li>
         </ul>
       </nav>
-      <i id="menuIcon" class="uil uil-bars"></i>
+      <i id="menuIcon" onClick={navList} className="uil uil-bars"></i>
     </header>
   )
 }
