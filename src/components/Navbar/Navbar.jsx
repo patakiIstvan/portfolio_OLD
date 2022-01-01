@@ -22,19 +22,19 @@ function Navbar() {
       </div>
       <nav class="nav">
         <ul>
-          <li><a href="https://www.patakiistvan.netlify.app">Home</a></li>
+          <li><a href="https://patakiistvan.netlify.app">Home</a></li>
         </ul>
         <ul>
-          <li><a href="https://www.patakiistvan.netlify.app">About me</a></li>
+          <li><a href="https://patakiistvan.netlify.app">About me</a></li>
         </ul>
         <ul>
-          <li><a href="https://www.patakiistvan.netlify.app"> Projects</a></li>
+          <li><a href="https://patakiistvan.netlify.app"> Projects</a></li>
         </ul>
         <ul>
-          <li><a href="https://www.patakiistvan.netlify.app">Technical skills</a></li>
+          <li><a href="https://patakiistvan.netlify.app">Technical skills</a></li>
         </ul>
         <ul>
-          <li><a href="https://www.patakiistvan.netlify.app">Contact</a></li>
+          <li><a href="https://patakiistvan.netlify.app">Contact</a></li>
         </ul>
       </nav>
       <i id="menuIcon" onClick={navList} className="uil uil-bars"></i>
