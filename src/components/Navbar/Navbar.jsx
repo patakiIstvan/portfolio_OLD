@@ -9,10 +9,10 @@ function navList() {
   nav.classList.toggle('active');
 }
 
-window.onscroll = () => {
-  menuIcon.classList.remove('uil-times');
-  nav.classList.remove('active');
-}
+// window.onscroll = () => {
+//   menuIcon.classList.remove('uil-times');
+//   nav.classList.remove('active');
+// }
 
 function Navbar() {
   return (
@@ -22,19 +22,19 @@ function Navbar() {
       </div>
       <nav class="nav">
         <ul>
-          <li><a href="https://google.com">Home</a></li>
+          <li><a href="https://www.patakiistvan.netlify.app">Home</a></li>
         </ul>
         <ul>
-          <li><a href="https://google.com">About me</a></li>
+          <li><a href="https://www.patakiistvan.netlify.app">About me</a></li>
         </ul>
         <ul>
-          <li><a href="https://google.com"> Projects</a></li>
+          <li><a href="https://www.patakiistvan.netlify.app"> Projects</a></li>
         </ul>
         <ul>
-          <li><a href="https://google.com">Technical skills</a></li>
+          <li><a href="https://www.patakiistvan.netlify.app">Technical skills</a></li>
         </ul>
         <ul>
-          <li><a href="https://google.com">Contact</a></li>
+          <li><a href="https://www.patakiistvan.netlify.app">Contact</a></li>
         </ul>
       </nav>
       <i id="menuIcon" onClick={navList} className="uil uil-bars"></i>
