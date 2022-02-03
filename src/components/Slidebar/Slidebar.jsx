@@ -1,9 +1,9 @@
 import React from 'react';
 import '../../app.scss'
 
-const Slidebar = () => {
-  return <div className="slidebar">
-    <i id="menuIcon" onClick={navList} className="uil uil-bars"></i>
+const Slidebar = ({ navMenu, toggleNav }) => {
+  return <div className={navMenu ? 'isOpen slidebar' : 'slidebar'} navMenu={navMenu} onClick={toggleNav} >
+    <i id="menuIcon" onClick={toggleNav} className="uil uil-bars"></i>
     <nav class="nav">
       <ul>
         <li><a href="https://patakiistvan.netlify.app">Home</a></li>
@@ -22,7 +22,7 @@ const Slidebar = () => {
       </ul>
     </nav>
     <i className="menuIcon uil uil-bars"></i>
-  </div>;
+  </div >;
 };
 
 export default Slidebar;

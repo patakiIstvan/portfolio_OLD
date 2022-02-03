@@ -14,7 +14,7 @@ function navList() {
 //   nav.classList.remove('active');
 // }
 
-function Navbar() {
+function Navbar({ toggleNav }) {
   return (
     <header className="navbar">
       <div className="logo">
@@ -37,7 +37,7 @@ function Navbar() {
           <li><a href="https://patakiistvan.netlify.app">Contact</a></li>
         </ul>
       </nav>
-      <i onClick={navList} className="menuIcon uil uil-bars"></i>
+      <i onClick={toggleNav} className="menuIcon uil uil-bars"></i>
     </header>
   )
 }

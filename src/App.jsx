@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from './components/Navbar/Navbar';
+import Slidebar from './components/Slidebar/Slidebar';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import {
@@ -9,12 +10,20 @@ import {
 } from "react-router-dom";
 import './app.scss';
 
-
 function App() {
+
+  const [navMenu, setNavMenu] = useState(false)
+
+  const toggleNav = () => {
+    setNavMenu(!navMenu)
+  }
+
+
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Slidebar navMenu={navMenu} toggleNav={toggleNav} />
+        <Navbar toggleNav={toggleNav} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
