@@ -3,7 +3,7 @@ import '../../app.scss'
 
 const Slidebar = ({ navMenu, toggleNav }) => {
   return <div className={navMenu ? 'isOpen slidebar' : 'slidebar'} navMenu={navMenu} onClick={toggleNav} >
-    <i id="menuIcon" onClick={toggleNav} className="uil uil-bars"></i>
+    <i onClick={toggleNav} className="menuicon uil uil-times"></i>
     <nav class="nav">
       <ul>
         <li><a href="https://patakiistvan.netlify.app">Home</a></li>
