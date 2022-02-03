@@ -2,7 +2,7 @@ import React from 'react';
 import '../../app.scss'
 
 const Slidebar = ({ navMenu, toggleNav }) => {
-  return <div className={navMenu ? 'isOpen slidebar' : 'slidebar'} navMenu={navMenu} onClick={toggleNav} >
+  return <div className={navMenu ? 'isOpen slidebar' : 'isClose slidebar'} navMenu={navMenu} onClick={toggleNav} >
     <i onClick={toggleNav} className="menuicon uil uil-times"></i>
     <nav class="nav">
       <ul>
