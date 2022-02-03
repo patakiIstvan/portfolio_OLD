@@ -8,8 +8,6 @@
   align-items: center;
   left: 0;
   transition: 0.3s ease-in-out;
-  opacity: 0;
-  top: -100%;
 
   .menuicon {
     color: #fff;
@@ -53,4 +51,9 @@
 .isOpen {
   opacity: 100%;
   top: 0;
+}
+
+.isClose {
+  opacity: 0;
+  top: -100%;
 }
