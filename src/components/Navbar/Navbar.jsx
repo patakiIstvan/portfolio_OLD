@@ -37,7 +37,7 @@ function Navbar() {
           <li><a href="https://patakiistvan.netlify.app">Contact</a></li>
         </ul>
       </nav>
-      <i id="menuIcon" onClick={navList} className="uil uil-bars"></i>
+      <i onClick={navList} className="menuIcon uil uil-bars"></i>
     </header>
   )
 }
