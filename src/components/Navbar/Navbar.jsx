@@ -1,19 +1,6 @@
 import React from 'react'
 import '../../app.scss'
 
-const menuIcon = document.querySelector('#menuIcon');
-const nav = document.querySelector('.nav');
-
-function navList() {
-  menuIcon.classList.toggle('uil-times');
-  nav.classList.toggle('active');
-}
-
-// window.onscroll = () => {
-//   menuIcon.classList.remove('uil-times');
-//   nav.classList.remove('active');
-// }
-
 function Navbar({ toggleNav }) {
   return (
     <header className="navbar">
