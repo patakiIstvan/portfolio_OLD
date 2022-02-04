@@ -1,5 +1,9 @@
 import React from 'react'
 import '../../app.scss'
+// components
+import Hero from '../../components/Hero/Hero'
+import About from '../../components/About/About'
+
 //import bg from '../../assets/images/heroBg.png';
 
 const body = document.querySelector("body");
@@ -36,40 +40,8 @@ function Home() {
   return (
     // <main style={{ backgroundImage: "url(" + bg + ")" }} class="main section" >
     <main className="main relative-section" onMouseMove={changeColor}>
-      <section className="hero section">
-        <div className="hero__container">
-          <div className="left">
-            <h1>Hey, I'm Pisti!</h1>
-            <p>I'm a front-end developer, a huge science and music enthusiastic.</p>
-            <a href="https://patakiistvan.netlify.app">My Projects</a>
-          </div>
-          <div className="right">
-            <div className="imgContainer">
-              <img className="img__human" src="/assets/images/profilePicLong.jpg" alt="A pic of a human, who is watching deep into your soul." />
-              <img className="img__shirt" src="/assets/images/ruha.png" alt="A pic of of the human's shirt. It looks cool." />
-            </div>
-          </div>
-        </div>
-
-        <div class="custom-shape-divider-bottom-1640210528">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-          </svg>
-        </div>
-
-      </section>
-      <section className="about-me section">
-        <div className="about-me__container">
-          <div className="about-me__title">
-            <h2 className="about-me__title-text">Things worth sharing</h2>
-          </div>
-          <div className="about-me__bottom-container">
-            <img className="about-me__pic" src="https://i.pinimg.com/564x/ca/12/36/ca123649022fb3f369f2ebe07f8bd0e6.jpg" alt="pic of armin the smartest guy in aot" />
-            <p className="about-me__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa accusamus rerum expedita dolorum voluptatum enim a non, inventore quis nihil ea? Nobis dignissimos commodi, maxime corrupti tempore autem eius ipsam!
-              Maiores suscipit labore commodi esse maxime adipisci praesentium quod aperiam aliquam. Illum unde iure, qui, molestiae delectus voluptate nihil, in omnis neque non itaque quam rerum tenetur animi illo quasi?</p>
-          </div>
-        </div>
-      </section>
+      <Hero />
+      <About />
     </main >
   )
 }

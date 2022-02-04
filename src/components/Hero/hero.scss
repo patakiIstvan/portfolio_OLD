@@ -1,0 +1,136 @@
+.hero {
+  background-color: #222;
+  background-size: 800px 600px;
+  position: relative;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    padding: 150px 0 200px;
+  }
+
+  .left {
+    flex: 1;
+    margin-top: -70px;
+
+    h1 {
+      color: $primaryColor;
+      font-size: 38px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      color: $secondaryColor;
+      width: 80%;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    >a {
+      display: inline-block;
+      color: $primaryColor;
+      font-size: 24px;
+      font-weight: 500;
+      padding: 10px 20px;
+      background-color: #4b6cc1;
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.075);
+        box-shadow: inset 0 0 0 2px #4b6cc1;
+        background: none;
+      }
+    }
+
+  }
+
+
+  .right {
+    flex: 1;
+    margin-top: -70px;
+    display: flex;
+    justify-content: center;
+
+    .imgContainer {
+      position: relative;
+      background-color: gray;
+    }
+
+    img {
+      width: 250px;
+      height: auto;
+      top: 10px;
+      left: 10px;
+    }
+
+    .img__human {
+      position: relative;
+      z-index: 5;
+    }
+
+    .img__shirt {
+      position: absolute;
+      z-index: 10;
+    }
+  }
+
+  //svg start
+
+  .custom-shape-divider-bottom-1640210528 {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-bottom-1640210528 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 115px;
+  }
+
+  .custom-shape-divider-bottom-1640210528 .shape-fill {
+    fill: #FFFFFF;
+  }
+
+  // svg end
+
+  // RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE
+  // RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE
+
+  @media(max-width: $mSize) {
+    &__container {
+      flex-direction: column-reverse;
+      padding: 100px 0 200px;
+
+      .right {
+        .imgContainer {
+          margin-bottom: 120px;
+          aspect-ratio: 1;
+          border-radius: 50%;
+          overflow: hidden;
+
+
+          .img__human {
+            left: 0px;
+            top: -35px;
+            object-fit: cover;
+
+          }
+
+          .img__shirt {
+            display: none;
+          }
+        }
+      }
+    }
+
+  }
+
+}

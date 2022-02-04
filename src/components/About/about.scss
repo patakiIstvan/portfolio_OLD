@@ -1,0 +1,41 @@
+.about-me {
+
+  &__container {
+    margin: 100px 0 100px;
+    padding: 0 10%;
+  }
+
+
+  // top container
+  &__title {
+    width: 100%;
+    border-radius: 15px;
+    background-color: lightblue;
+    padding: 15px 15px 15px calc(30% + 20px);
+    height: 130px;
+
+    &-text {
+      font-size: 40px;
+      font-weight: 800;
+    }
+  }
+
+  //bottom container
+  &__bottom-container {
+    display: flex;
+    padding: 15px;
+  }
+
+  &__pic {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 15px;
+
+    transform: translateY(-130px);
+  }
+
+  &__desc {
+    font-size: 20px;
+  }
+}
