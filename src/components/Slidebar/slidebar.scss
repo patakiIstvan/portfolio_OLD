@@ -19,21 +19,14 @@
     cursor: pointer;
   }
 
-  nav.ul {
+  .nav {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 80px);
+    grid-template-rows: repeat(5, 60px);
     text-align: center;
-
-    @media screen and (max-width: 480px) {
-      grid-template-rows: repeat(5, 60px);
-    }
   }
 
-  nav.li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .nav a {
     font-size: 1.5rem;
     text-decoration: none;
     transition: 0.2s ease-in-out;
@@ -43,7 +36,6 @@
 
     &:hover {
       color: #01bf71;
-      background: #fff;
     }
   }
 }

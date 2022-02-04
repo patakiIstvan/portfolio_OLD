@@ -7,7 +7,7 @@ function Navbar({ toggleNav }) {
       <div className="logo">
         <span>Pataki István</span>
       </div>
-      <nav class="nav">
+      <nav className="nav">
         <ul>
           <li><a href="https://patakiistvan.netlify.app">Home</a></li>
         </ul>

@@ -2,9 +2,9 @@ import React from 'react';
 import '../../app.scss'
 
 const Slidebar = ({ navMenu, toggleNav }) => {
-  return <div className={navMenu ? 'isOpen slidebar' : 'isClose slidebar'} navMenu={navMenu} onClick={toggleNav} >
+  return <div className={navMenu ? 'isOpen slidebar' : 'isClose slidebar'} onClick={toggleNav} >
     <i onClick={toggleNav} className="menuicon uil uil-times"></i>
-    <nav class="nav">
+    <nav className="nav">
       <ul>
         <li><a href="https://patakiistvan.netlify.app">Home</a></li>
       </ul>
