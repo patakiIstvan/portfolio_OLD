@@ -3,6 +3,7 @@ import '../../app.scss'
 // components
 import Hero from '../../components/Hero/Hero'
 import About from '../../components/About/About'
+import Footer from '../../components/Footer/Footer'
 
 //import bg from '../../assets/images/heroBg.png';
 
@@ -42,6 +43,7 @@ function Home() {
     <main className="main relative-section" onMouseMove={changeColor}>
       <Hero />
       <About />
+      <Footer />
     </main >
   )
 }
