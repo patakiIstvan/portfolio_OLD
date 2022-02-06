@@ -55,14 +55,14 @@
 
     .imgContainer {
       position: relative;
-      background-color: gray;
+      box-shadow: -12px -14px 13px -2px rgba(0, 0, 0, 0.75);
     }
 
     img {
       width: 250px;
       height: auto;
-      top: 10px;
-      left: 10px;
+      top: 0px;
+      left: 0px;
     }
 
     .img__human {
@@ -103,6 +103,28 @@
 
   // RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE
   // RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE
+
+  // @media(max-width: $lSize) {
+  //   .left {
+  //     h1 {
+  //       font-size: 30px;
+  //     }
+
+  //     p {
+  //       font-size: 18px;
+  //     }
+
+  //     a {
+  //       font-size: 18px;
+  //     }
+  //   }
+
+  //   .right {
+  //     img {
+  //       width: 180px;
+  //     }
+  //   }
+  // }
 
   @media(max-width: $mSize) {
     &__container {
