@@ -16,7 +16,7 @@ function Projects() {
         <div className="project__card">
           <img src="https://quasa.io/storage/photos/%D0%A4%D0%BE%D1%82%D0%BE%2011/APM%201.png" alt="My project" className="project__img" />
           <h3 className="project__title">Project #1</h3>
-          <a href="" className="project__button">
+          <a href="https://patakiistvan.netlify.app" className="project__button">
             Read more
             <i className="project__icon uil uil-arrow-right"></i>
           </a>
