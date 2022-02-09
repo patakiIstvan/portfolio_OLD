@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../app.scss'
 
-function Hero() {
+function Hero({ shirtColor }) {
   return (
     <section className="hero section">
       <div className="hero__container">
@@ -13,7 +13,7 @@ function Hero() {
         <div className="right">
           <div className="imgContainer">
             <img className="img__human" src="/assets/images/profilePicLong.jpg" alt="A pic of a human, who is watching deep into your soul." />
-            <img className="img__shirt" src="/assets/images/ruha.png" alt="A pic of of the human's shirt. It looks cool." />
+            <img className="img__shirt" style={{ filter: `hue-rotate(${String(shirtColor.hue)}deg) saturate(${String(shirtColor.sat)}) brightness(${String(shirtColor.br)})` }} src="/assets/images/ruha.png" alt="A pic of of the human's shirt. It looks cool." />
           </div>
         </div>
       </div>
