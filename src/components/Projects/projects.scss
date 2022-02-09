@@ -9,23 +9,28 @@
 
   .filter__item {
     cursor: pointer;
-    color: white;
+    color: black;
     padding: .25rem .75rem;
     font-weight: 800;
     border-radius: .5rem;
   }
 
-  project__container {
-    padding-top: 1rem;
+  .project__container {
+    width: 100px;
+    padding-top: 0rem;
+    margin-bottom: 3rem;
+    display: grid;
+    gap: 1.25rem;
   }
 
-  project__card {
+  .project__card {
     background-color: gray;
     padding: 1rem;
     border-radius: 1rem;
   }
 
   .project__img {
+    width: 400px;
     border-radius: 1rem;
     margin-bottom: .75rem;
   }
@@ -46,11 +51,11 @@
   }
 
   .project__button:hover .project__icon {
-    transform: translateX(1rem);
+    transform: translateX(.25rem);
   }
 
-  project__icon {
+  .project__icon {
     font-size: 19px;
-    transition: 0.4s;
+    transition: all 0.3s ease-in-out;
   }
 }

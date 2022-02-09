@@ -1,15 +1,17 @@
 import React from 'react';
 
+
 function Projects() {
+
   return (
     <section className="projects section">
       <span className="section__subtitle">My portfolio</span>
       <h2 className="section__title">Recent works</h2>
 
       <div className="filters">
-        <span className="filter__item">All website</span>
-        <span className="filter__item">Made with react</span>
-        <span className="filter__item">Made without react</span>
+        <span className="filter__item active-work">All website</span>
+        <span className="filter__item">Followed design</span>
+        <span className="filter__item" data-filter='.nodesign'>Own design</span>
       </div>
       <div className="project__container">
         {/* Project 1 */}
