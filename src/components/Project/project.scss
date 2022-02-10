@@ -1,0 +1,35 @@
+.project__card {
+  background-color: gray;
+  padding: 1rem;
+  border-radius: 1rem;
+
+  .project__img {
+    width: 400px;
+    border-radius: 1rem;
+    margin-bottom: .75rem;
+  }
+
+  .project__title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: .25rem;
+  }
+
+  .project__button {
+    width: max-content;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+  }
+
+  .project__button:hover .project__icon {
+    transform: translateX(.25rem);
+  }
+
+  .project__icon {
+    font-size: 19px;
+    transition: all 0.3s ease-in-out;
+  }
+}

@@ -1,7 +1,23 @@
-import React from 'react';
-
+import React, { useState, useEffect } from 'react';
+import projectData from '../../projects';
+import Project from '../Project/Project';
+import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion'
 
 function Projects() {
+
+  const [filteredProjects, setFilteredProjects] = useState(projectData)
+  let [projectType, setProjectType] = useState("all")
+
+  useEffect(() => {
+    if (projectType === "all") {
+      setFilteredProjects(projectData);
+      return;
+    }
+    const filtered = projectData.filter(pr =>
+      pr.category.includes(projectType)
+    );
+    setFilteredProjects(filtered)
+  }, [projectType])
 
   return (
     <section className="projects section">
@@ -9,22 +25,22 @@ function Projects() {
       <h2 className="section__title">Recent works</h2>
 
       <div className="filters">
-        <span className="filter__item active-work">All website</span>
-        <span className="filter__item">Followed design</span>
-        <span className="filter__item" data-filter='.nodesign'>Own design</span>
+        <span className="filter__item active-work" onClick={() => setProjectType("all")}>All website</span>
+        <span className="filter__item" onClick={() => setProjectType("notmydesign")}>Followed design</span>
+        <span className="filter__item" onClick={() => setProjectType("mydesign")}>Own design</span>
       </div>
-      <div className="project__container">
-        {/* Project 1 */}
-        <div className="project__card">
-          <img src="https://quasa.io/storage/photos/%D0%A4%D0%BE%D1%82%D0%BE%2011/APM%201.png" alt="My project" className="project__img" />
-          <h3 className="project__title">Project #1</h3>
-          <a href="https://patakiistvan.netlify.app" className="project__button">
-            Read more
-            <i className="project__icon uil uil-arrow-right"></i>
-          </a>
-        </div>
-
-      </div>
+      <motion.div Layout className="project__container">
+        <AnimatePresence>
+          {filteredProjects.map((project, i) => {
+            return (<Project
+              key={i}
+              title={project.title}
+              pic={project.pic}
+              tech={project.tech}
+            />);
+          })}
+        </AnimatePresence>
+      </motion.div>
     </section>);
 }
 
