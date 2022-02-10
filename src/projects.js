@@ -1,5 +1,4 @@
-export default 
-  [
+const projectData = [
     {
       title: "Portfolió",
       tech: ["HTML", "CSS/SCSS", "javascript", "react.js"],
@@ -19,3 +18,5 @@ export default
       category: ["mydesign"]
     }
   ]
+
+  export default projectData;
