@@ -12,6 +12,10 @@
 @import './components/Project//project';
 @import './components/Footer/footer';
 
+.App {
+  overflow-x: hidden;
+}
+
 .relative-section {
   width: 100%;
   position: relative;
