@@ -2,34 +2,54 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer class="footer">
-      <div class="footer__main">
-        <div class="footer__main__col1">
-          <h3 class="footer__main__title">Join our mailing list</h3>
-          <form action="">
-            <label for="fn">First name</label>
-            <input type="text" name="" id="fn" placeholder="" />
-            <label for="mail">Email</label>
-            <input type="email" name="" id="mail" />
-            <button>Subscribe</button>
-          </form>
-        </div>
-        <div class="footer__main__col2">
-          <h3 class="footer__main__title">Explore</h3>
-          <a href="/">home</a>
-          <a href="/tickets">tickets</a>
-          <a href="/bands">bands</a>
-          <a href="/contact">contact</a>
-        </div>
+    <footer class="footer section">
+      <h2 className="section__title">Contact me</h2>
+      <span className="section__subtitle">Get in touch</span>
+      <div class="footer__container grid">
+        <div>
 
-        <div class="footer__main__col3">
-          <h3 class="footer__main__title">Get in touch</h3>
-          <a href="/">home</a>
-          <a href="/about">tickets</a>
+          <div className="contact__information">
+            <i className="uil uil-phone contact__icon"></i>
+            <div>
+              <h3 className="contact__title">Call me</h3>
+              <span className="contact__subtitle">999-777-666</span>
+            </div>
+          </div>
+          <div className="contact__information">
+            <i className="uil uil-envelope contact__icon"></i>
+            <div>
+              <h3 className="contact__title">Email</h3>
+              <span className="contact__subtitle">xddf@fdsfds.com</span>
+            </div>
+          </div>
+
         </div>
-      </div>
-      <div class="footer__credit">
-        <p>&copyCopyright 2021 - István</p>
+        <form action="" className="contact__form grid">
+          <div className="contact__inputs grid">
+            <div className="contact__content">
+              <label htmlFor="" className="contact__label">Name</label>
+              <input type="text" className="contanct__input" />
+            </div>
+            <div className="contact__content">
+              <label htmlFor="" className="contact__label">Email</label>
+              <input type="email" className="contanct__input" />
+            </div>
+          </div>
+          <div className="contact__content">
+            <label htmlFor="" className="contact__label">Name</label>
+            <input type="text" className="contanct__input" />
+          </div>
+          <div className="contact__content">
+            <label htmlFor="" className="contact__label">Name</label>
+            <textarea name="" id="" cols="0" rows="7" className="contact__input"></textarea>
+          </div>
+          <div>
+            <a href="https://patakiistvan.netlify.app" className="button button--flex">
+              Send
+              <i className="uil uil-message contact__icon"></i>
+            </a>
+          </div>
+        </form>
       </div>
     </footer>
   );
