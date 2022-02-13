@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion/dist/framer-motion'
 
-function Project({ title, pic, tech }) {
+function Project({ title, desc, github, pic, tech }) {
   return (
     (
       <motion.div
@@ -10,8 +10,10 @@ function Project({ title, pic, tech }) {
         initial={{ opacity: 0, scale: 0 }}
         exit={{ opacity: 0, scale: 0 }} className="project__card">
         <img src={pic} alt="My project" className="project__img" />
-        <h3 className="project__title">{title}</h3>
-
+        <div className="info-container">
+          <h3 className="project__title">{title}</h3>
+          <p className="project__description">{desc}</p>
+        </div>
       </motion.div>
     )
   )

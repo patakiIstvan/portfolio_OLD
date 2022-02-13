@@ -1,12 +1,15 @@
 .project__card {
   background-color: gray;
-  padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
 
   .project__img {
-    width: 400px;
-    border-radius: 1rem;
+    width: 100%;
     margin-bottom: .75rem;
+  }
+
+  .info-container {
+    padding: 0 1rem 1rem 1rem;
   }
 
   .project__title {
