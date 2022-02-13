@@ -20,7 +20,7 @@ function Projects() {
   }, [projectType])
 
   return (
-    <section className="projects section">
+    <section id="projects" className="projects section">
       <span className="section__subtitle">My portfolio</span>
       <h2 className="section__title">Recent works</h2>
 

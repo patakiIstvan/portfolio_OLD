@@ -5,19 +5,19 @@ const Slidebar = ({ navMenu, toggleNav }) => {
     <i onClick={toggleNav} className="menuicon uil uil-times"></i>
     <nav className="nav">
       <ul>
-        <li><a href="https://patakiistvan.netlify.app">Home</a></li>
+        <li><a href="#home">Home</a></li>
       </ul>
+      {/* <ul>
+        <li><a href="#home">About me</a></li>
+      </ul> */}
       <ul>
-        <li><a href="https://patakiistvan.netlify.app">About me</a></li>
+        <li><a href="#projects"> Projects</a></li>
       </ul>
+      {/* <ul>
+        <li><a href="#home">Technical skills</a></li>
+      </ul> */}
       <ul>
-        <li><a href="https://patakiistvan.netlify.app"> Projects</a></li>
-      </ul>
-      <ul>
-        <li><a href="https://patakiistvan.netlify.app">Technical skills</a></li>
-      </ul>
-      <ul>
-        <li><a href="https://patakiistvan.netlify.app">Contact</a></li>
+        <li><a href="#footer">Contact</a></li>
       </ul>
     </nav>
     <i className="menuIcon uil uil-bars"></i>

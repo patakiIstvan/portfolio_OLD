@@ -13,6 +13,11 @@ function Project({ title, desc, github, pic, tech }) {
         <div className="info-container">
           <h3 className="project__title">{title}</h3>
           <p className="project__description">{desc}</p>
+          <div className="tech__container">
+            {tech.map((techName, i) => {
+              return <span key="i" className="tech__text">{techName}</span>
+            })}
+          </div>
         </div>
       </motion.div>
     )

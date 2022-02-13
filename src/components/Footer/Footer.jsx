@@ -2,8 +2,8 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer class="footer section">
-      <h2 className="section__title">Contact me</h2>
+    <footer id="footer" class="footer section">
+      {/* <h2 className="section__title">Contact me</h2>
       <span className="section__subtitle">Get in touch</span>
       <div class="footer__container grid">
         <div>
@@ -50,7 +50,7 @@ function Footer() {
             </a>
           </div>
         </form>
-      </div>
+      </div> */}
     </footer>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 function Hero({ shirtColor }) {
   return (
-    <section className="hero section">
+    <section id="home" className="hero section">
       <div className="hero__container">
         <div className="left">
           <h1>Hey, I'm Pisti!</h1>
