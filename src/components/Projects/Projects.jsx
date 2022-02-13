@@ -35,6 +35,8 @@ function Projects() {
             return (<Project
               key={i}
               title={project.title}
+              desc={project.desc}
+              github={project.github}
               pic={project.pic}
               tech={project.tech}
             />);

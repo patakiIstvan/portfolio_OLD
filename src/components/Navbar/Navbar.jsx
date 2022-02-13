@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../app.scss'
 
 function Navbar({ toggleNav }) {
   return (

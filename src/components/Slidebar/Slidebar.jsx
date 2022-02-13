@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../app.scss'
 
 const Slidebar = ({ navMenu, toggleNav }) => {
   return <div className={navMenu ? 'isOpen slidebar' : 'isClose slidebar'} onClick={toggleNav} >
