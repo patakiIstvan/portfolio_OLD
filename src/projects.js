@@ -12,7 +12,7 @@ const projectData = [
     {
       title: "Fancy cards",
       desc: "I followed a design which included some fancy cards",
-      github: "https://github.com/patakiIstvan/interju",
+      github: "https://github.com/patakiIstvan/fancy-cards",
       pic: kartyasPic,
       tech: ["HTML", "CSS/PostCSS", "javascript"],
       category: ["notmydesign"]

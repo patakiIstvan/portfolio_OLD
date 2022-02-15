@@ -6,11 +6,11 @@ function Hero({ shirtColor }) {
       <div className="hero__container">
         <div className="left">
           <h1>Hey, I'm Pisti!</h1>
-          <p>I'm a front-end developer, a huge science and music enthusiastic.</p>
-          <a href="https://patakiistvan.netlify.app">My Projects</a>
+          <p>I'm a front-end developer making scalable responsive websites.</p>
+          <a href="#projects">My Projects</a>
         </div>
         <div className="right">
-          <div className="imgContainer">
+          <div className="img__container">
             <img className="img__human" src="/assets/images/profilePicLong.jpg" alt="A pic of a human, who is watching deep into your soul." />
             <img className="img__shirt" style={{ filter: `hue-rotate(${String(shirtColor.hue)}deg) saturate(${String(shirtColor.sat)}) brightness(${String(shirtColor.br)})` }} src="/assets/images/ruha.png" alt="A pic of of the human's shirt. It looks cool." />
           </div>
