@@ -9,17 +9,19 @@ function Project({ title, desc, github, pic, tech }) {
         animate={{ opacity: 1, scale: 1 }}
         initial={{ opacity: 0, scale: 0 }}
         exit={{ opacity: 0, scale: 0 }} className="project__card">
-        <img src={pic} alt="My project" className="project__img" />
-        <div className="info-container">
-          <h3 className="project__title">{title}</h3>
-          <p className="project__description">{desc}</p>
-          <div className="tech__container">
-            {tech.map((techName, i) => {
-              return <span key="i" className="tech__text">{techName}</span>
-            })}
+        <a href={github}>
+          <img src={pic} alt="My project" className="project__img" />
+          <div className="info-container">
+            <h3 className="project__title">{title}</h3>
+            <p className="project__description">{desc}</p>
+            <div className="tech__container">
+              {tech.map((techName, i) => {
+                return <span key="i" className="tech__text">{techName}</span>
+              })}
+            </div>
           </div>
-        </div>
-      </motion.div>
+        </a>
+      </motion.div >
     )
   )
 }
