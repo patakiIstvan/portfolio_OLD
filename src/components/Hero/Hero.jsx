@@ -1,5 +1,5 @@
 import React from 'react';
-import CV from '../../assets/pdf/resume_hun.pdf';
+import CV from '../../assets/pdf/resume_en.pdf';
 
 function Hero({ shirtColor }) {
   return (
@@ -8,7 +8,7 @@ function Hero({ shirtColor }) {
         <div className="left">
           <h1>Hey, I'm Pisti!</h1>
           <p>I'm a front-end developer making scalable responsive websites.</p>
-          <a href={CV} download="Önéletrajz Pataki István">Download CV</a>
+          <a href={CV} download="Resume István Pataki">Download CV</a>
         </div>
         <div className="right">
           <div className="img__container">
