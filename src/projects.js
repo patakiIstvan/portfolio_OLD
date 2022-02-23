@@ -1,5 +1,6 @@
 import portfolioPic from './assets/images/project_portfolio.png';
 import kartyasPic from './assets/images/project_kartyas.png';
+import pomodoroPic from './assets/images/project_gpomodoro.png';
 const projectData = [
     {
       title: "Personal portfolio",
@@ -16,6 +17,14 @@ const projectData = [
       pic: kartyasPic,
       tech: ["HTML", "CSS/PostCSS", "javascript"],
       category: ["notmydesign"]
+    },
+    {
+      title: "Pomodoro timer",
+      desc: "Its a customizable timer which helps you stay focused",
+      github: "https://github.com/patakiIstvan/pomodoro",
+      pic: pomodoroPic,
+      tech: ["HTML", "CSS/SASS", "javascript", "react.js"],
+      category: ["mydesign"]
     }
   ]
 
