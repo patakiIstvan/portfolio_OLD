@@ -1,6 +1,7 @@
 import portfolioPic from './assets/images/project_portfolio.png';
 import kartyasPic from './assets/images/project_kartyas.png';
 import pomodoroPic from './assets/images/project_gpomodoro.png';
+import smartcityPic from './assets/images/project_smartcity.png';
 const projectData = [
     {
       title: "Personal portfolio",
@@ -25,6 +26,14 @@ const projectData = [
       pic: pomodoroPic,
       tech: ["HTML", "CSS/SASS", "javascript", "react.js"],
       category: ["mydesign"]
+    },
+    {
+      title: "Smart city",
+      desc: "A smaller landing page, which is browser compatible",
+      github: "https://github.com/patakiIstvan/Smart-city-landpage/tree/master",
+      pic: smartcityPic,
+      tech: ["HTML", "CSS/SASS", "javascript", "react.js"],
+      category: ["notmydesign"]
     }
   ]
 
