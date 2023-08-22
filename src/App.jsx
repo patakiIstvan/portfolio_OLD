@@ -34,6 +34,10 @@ function App() {
     setNavMenu(!navMenu)
   }
 
+  React.useEffect(function () {
+    alert("I'm about to deliver the next 13 version of this portfolio, stay turned. The estimated date of the update is about the 1st week of september.")
+  }, [])
+
   const changeColor = (e) => {
     const mouseXPercent = e.screenX / document.body.clientWidth;
     const hueExtra = colorRange * mouseXPercent;
