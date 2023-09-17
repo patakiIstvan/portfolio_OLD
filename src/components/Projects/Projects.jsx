@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion'
 function Projects() {
 
   const [filteredProjects, setFilteredProjects] = useState(projectData)
-  let [projectType, setProjectType] = useState("all")
+  let [projectType, setProjectType] = useState("new")
 
   useEffect(() => {
     if (projectType === "all") {
@@ -27,8 +27,8 @@ function Projects() {
       </div>
       <div className="filters">
         <span className={projectType === "all" ? "filter__item filter__active" : "filter__item"} onClick={() => setProjectType("all")}>All website</span>
-        <span className={projectType === "notmydesign" ? "filter__item filter__active" : "filter__item"} onClick={() => setProjectType("notmydesign")}>Followed design</span>
-        <span className={projectType === "mydesign" ? "filter__item filter__active" : "filter__item"} onClick={() => setProjectType("mydesign")}>Own design</span>
+        <span className={projectType === "new" ? "filter__item filter__active" : "filter__item"} onClick={() => setProjectType("new")}>Followed design</span>
+        <span className={projectType === "old" ? "filter__item filter__active" : "filter__item"} onClick={() => setProjectType("old")}>Own design</span>
       </div>
       <motion.div Layout className="project__container">
         <AnimatePresence>
