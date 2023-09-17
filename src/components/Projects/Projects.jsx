@@ -26,9 +26,9 @@ function Projects() {
         <h2 className="section__title">Recent works</h2>
       </div>
       <div className="filters">
-        <span className={projectType === "all" ? "filter__item filter__active" : "filter__item"} onClick={() => setProjectType("all")}>All website</span>
-        <span className={projectType === "new" ? "filter__item filter__active" : "filter__item"} onClick={() => setProjectType("new")}>Followed design</span>
-        <span className={projectType === "old" ? "filter__item filter__active" : "filter__item"} onClick={() => setProjectType("old")}>Own design</span>
+        <span className={projectType === "all" ? "filter__item filter__active" : "filter__item"} onClick={() => setProjectType("all")}>All</span>
+        <span className={projectType === "new" ? "filter__item filter__active" : "filter__item"} onClick={() => setProjectType("new")}>New</span>
+        <span className={projectType === "old" ? "filter__item filter__active" : "filter__item"} onClick={() => setProjectType("old")}>Old</span>
       </div>
       <motion.div Layout className="project__container">
         <AnimatePresence>
