@@ -7,7 +7,7 @@ function Hero({ shirtColor }) {
       <div className="hero__container">
         <div className="left">
           <h1>Hey, I'm Pisti!</h1>
-          <p>I'm a front-end developer making scalable responsive websites.</p>
+          <p>I'm a full stack developer making scalable responsive websites.</p>
           <a href={CV} download="Resume István Pataki">Download CV</a>
         </div>
         <div className="right">
